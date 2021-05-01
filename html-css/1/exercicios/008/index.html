@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formatação de Textos</title>
+    <style>
+        mark{
+            background-color: rgb(0, 255, 179);
+        }
+        body{
+            background-color: #f4ecd8;
+        }
+    </style>
 </head>
 <body>
     <h1>Principais formatações</h1>
@@ -36,12 +44,37 @@
     <h2>Texto subscrito</h2>
     <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
 
-    <h2>Texto em codido</h2>
-    <p><code>num = input('Type a number: ') <br>
-    if num % 2 == 0: <br>
-        print('The number is pair') <br>
-    else: <br>
-        print('The number is odd') <br>
-    </code></p>
+    <h2>Texto em codido (texto mono-espaçado)</h2>
+    <p>
+        <pre>
+            <code>
+    num = input('Type a number: ')
+    if num % 2 == 0:
+        print('The number is pair')
+    else:
+        print('The number is odd')
+            </code>
+        </pre>
+    </p>
+
+    <h2>Citações Simples</h2>
+    <p><q>O computador é um burro muito rápido</q></p>
+
+    <h2>Citações Completas</h2>
+    <p>Segundo o personagem Sore de No Game No Life, escrito pelo autor Yū Kamiya:
+        <blockquote cite="https://www.lojanewpop.com.br/no-game-no-life-livro03">
+            "Sabe, Shiro... Dizem que as pessoas podem mudar, mas será que é verdade? Se quiser voar de verdade, será que nascerão asas nas nossas costas? Acho que não. Porque não somos nós que devemos mudar, mas sim o meio que escolhemos para voar, não acha? Precisamos criar! Criar uma forma para que nós possamos voar do jeito que somos. Precisamos construir! [...]"
+        </blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>
+        Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, e é muito divertido!
+    </p>
+
+    <h2>Texto invertido</h2>
+    <p>
+        <bdo dir="rtl">Estou aprendendo HTML e CSS.</bdo>
+    </p>
 </body>
 </html>

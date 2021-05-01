@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica.</h1>
+    <picture>
+        <source media="(max-width: 720px)" srcset="img/img-p.png" type="image/png">
+        <source media="(max-width: 1020px)" srcset="img/img-m.png" type="image/png">
+        <img src="img/img-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <audio preload="metadata" controls>
+        <source src="audio/01_Dragon-Age-Inquisition-Theme.wav" type="audio/wav">
+        <source src="audio/02-Geralt-of-Rivia.mp3" type="audio/mp3">
+        <source src="audio/5-Seconds-of-Summer-Teeth.mp3" type="audio/mp3">
+        <source src="audio/Ben-Frost-First-Strike.mp3" type="audio/mp3">
+        <p>Seu navegador não esta conseguindo reproduzir o audio, <a href="audio/audio.7z" download="audio/audio.7z" type="aplication/zip">clique aqui para download.</a></p>
+    </audio>
+
+    <h1>Reproduzindo video</h1>
+    <h2>Reproduzindo video local</h2>
+    <video src="video/Shingeki no Kyojin - The Final Season Ep.01.mp4" width="1000" controls></video>
+
+    <h2>Reproduzindo video externo</h2>
+
+    <h3>Reproduzindo video do youtube</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h3>Reproduzindo video do vimio</h3>
+    <iframe src="https://player.vimeo.com/video/428074592" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
